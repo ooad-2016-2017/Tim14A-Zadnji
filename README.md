@@ -28,8 +28,11 @@ Korisnik aplikacije se prijavi na istu kao korisnik gradskog prevoza. Ukoliko ne
 
 ## Akteri
 
-** 1. Korisnik javnog gradskog prevoza** - Osoba koja koristi gradski prevoz. Mora posjedovati account i broj računa sa kojim će kupovati karte, ukoliko to želi. Također prilikom registracije dobiva RFID senzor koji će koristiti kao identifikator. Ne može se prijaviti u aplikaciju kao uposlenik saobraćaja.
-** 2. Vozač** - Osoba koja je uposlenik GRAS-a. Neophodno je da se registruje pri ulasku u vozilo, kao i da prijavi samo vozilo u aplikaciju. Osim što upravlja vozilom, on može postavljati obavijesti koje se tiču korisnika prevoza na aplikaciji.
-** 3. Upravnik** - Osoba koja upravlja preduzećem. Posjeduje pristup informacijama svih uposlenika, te na osnovu njihovih rejtinga stimuliše ih za njihov kvalitetan rad ili kažnjava za nekvalitetan. Određuje red vožnji, postavlja obavijesti koje se tiču radnika i putnika, postavlja raspored vožnji na aplikaciji, modificaira ih.
-** 4. Administrator** - Osoba koja je zadužena za održavanje aplikacije. Unosi podatke svih uposlenika, omogućava registrovanje putnika, izdaje svim registriranim korisnicima njihove šifre koje koriste za identifikaciju i osiguravanje identiteta. Dodaje nove uposlenike i uklanja bivše. 
+**1. Korisnik javnog gradskog prevoza** - Osoba koja koristi gradski prevoz. Mora posjedovati account i broj računa sa kojim će kupovati karte, ukoliko to želi. Također prilikom registracije dobiva RFID senzor koji će koristiti kao identifikator. Ne može se prijaviti u aplikaciju kao uposlenik saobraćaja.
+
+**2. Vozač** - Osoba koja je uposlenik GRAS-a. Neophodno je da se registruje pri ulasku u vozilo, kao i da prijavi samo vozilo u aplikaciju. Osim što upravlja vozilom, on može postavljati obavijesti koje se tiču korisnika prevoza na aplikaciji.
+
+**3. Upravnik** - Osoba koja upravlja preduzećem. Posjeduje pristup informacijama svih uposlenika, te na osnovu njihovih rejtinga stimuliše ih za njihov kvalitetan rad ili kažnjava za nekvalitetan. Određuje red vožnji, postavlja obavijesti koje se tiču radnika i putnika, postavlja raspored vožnji na aplikaciji, modificaira ih.
+
+**4. Administrator** - Osoba koja je zadužena za održavanje aplikacije. Unosi podatke svih uposlenika, omogućava registrovanje putnika, izdaje svim registriranim korisnicima njihove šifre koje koriste za identifikaciju i osiguravanje identiteta. Dodaje nove uposlenike i uklanja bivše. 
 
