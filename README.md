@@ -16,4 +16,4 @@ Također s obzirom da će sva vozila biti povezana GPS-om, korisnici će biti u 
 
 ## Procesi
 
-Korisnik aplikacije se prijavi na istu kao korisnik gradskog prevoza. 
+Korisnik aplikacije se prijavi na istu kao korisnik gradskog prevoza..
