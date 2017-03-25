@@ -22,7 +22,7 @@ Korisnik aplikacije se prijavi na istu kao korisnik gradskog prevoza. Ukoliko ne
 
 * Mogućnost online kupovine karata
 * Mogućnost korištenja prevoza uz minimalnu interakciju sa vozačem
-* Mogućnost uvida u pozicije svih vozila koja koristi javni gradski saobraćaj
+* Mogućnost uvida u pozicije svih vozila 
 * Mogućnost uvida u stanje vozila koje koristimo
 * Mogućnost ocjenjivanja i kritikovanja usluge gradskog saobraćaja, te samim tim uticanja na kvalitetu istog
 
