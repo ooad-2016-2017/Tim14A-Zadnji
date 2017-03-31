@@ -22,15 +22,28 @@ Također s obzirom da će sva vozila biti povezana GPS-om, korisnici će biti u 
   * Matični broj
   * Status osobe(učenik, student, zaposlen/nezaposlen, uposlenik firme)
   * Šifra(osoba prilikom registracije unosi svoju šifru i čeka potvrdu registracije)
- 
+  * Ukoliko je uposlenik GRAS-a, osoba dobija dodatni sigurnosni kod
+  Nakon registracije osoba od administratora dobiva svoj RFID uređaj koji koristi pri ulasku u vozilo
+   
 
+* Kupovina karata: Osoba nakon registrovanja korisničkog računa za aplikacij može odabrati željeni tip vozne karte koju želi kupiti, kao i vremenski termin kupovine. U ponudi će imati više tipova karata (dnevna, sedmična, mjesečna, godišnja, proozvoljan broj vožnji). Osoba nakon odabira tipa karte koju želi kupiti, odlazi na prodajno mjesto JKP Gras-a u određenom željenom terminu, te izvrši plaćanje karte osobi koja radi na naplati karata.
 
+* Prijava vozača: Vozač prilikom ulaska u vozilo, prijavljuje se na aplikaciju. Prilikom prijave aplikacija traži unos sigurnosnog koda koji svaki od uposlenika dobiva pri registraciji. Također vozač vrši prijavu vozila isto tako sa sigurnosnim kodom. Razumijemo da će svako prevozno vozilo biti opremljeno jednim mobilnim uređajem, sa kojim će biti povezano na aplikaciju. 
 
-Korisnik aplikacije se prijavi na istu kao korisnik gradskog prevoza. Ukoliko ne posjeduje korisnički račun, otvara isti. Aplikacija poznaje više tipova korisničkih računa (putnik, vozač, poslovođa, administrator, vozilo), te prilikom kreiranja računa bira jedan od ponuđenih tipova. Ukoliko je riječ o putniku, on daje svoje podatke koji su od interesa te čeka odobrenje od administratora (sistema). Sa odobrenjem dobija karakterističnu šifru koju će koristiti pri identifikaciji, kao i RFID senzor. Administrator unosi podatke svih uposlenika GRAS-a, tako da će u slučaju da se običan putnik pokušva prijaviti sa nalogom uposlenika, ista prijava biti onemogućenja, jer svaka od djelatnosti će posjedovati karakterističan kod koji će služiti za identifikaciju. Nakon kreiranja računa, putnik može pomoću aplikacije odabrati tip putne karte koju želi kupiti. U ponudi će biti karte različitog vremenskog perioda korištenja(mjesečna, sedmična, denvna) ili sa konačnim brojem vožnji. Nakon što odabere željeni tip, korisnik aplikacije će plaćanje vršiti elektronskim putem, pomoću _PayPal-a_. Prijavom na aplikaciju, korisnik će moći odabrati željenu liniju koju želi koristiti npr. _Dobrinja-Vijećnica_, te će mu aplikacija izbaciti listu vozila koja voze na toj lokaciji, kao i njihovu posljenju poziciju na kojoj su se ta vozila nalazila. Samim tim će osoba moći kvalitetno rasporediti svoje vrijeme. Prilikom ulaska u prevozno sredstvo, osoba će svoju identifikaciju vršiti RFID uređajem, te će sistem u tom prevoznom sredstvu potvrditi mogućnost prolaska putnika ovisno o stanju njegovog računa. Također putnici će imati pregled stanja vozila, vozača, te dati ocjenu ugođaju vožnje. Što se tiče vozača on će prilikom ulaska u vozilo, također se prijaviti na aplikaciju, prijavit će vozilo koje koristi(napominjemo da svako vozilo će imati karakterističan sistem identifikacije), te u toku vožnje će moći postaviti obavijesti na aplikaciji, npr. Ukoliko se dogodila neka nesreća, vozač će moći postaviti obavijest da se saobraćaj odvija otežano, što svi koji budu u aplikaciji odabrali njegovu liniju saobraćaja će moći vidjeti. Poslovođa će pratiti rejtinge vozača kao i vozila, pratiti će kritike putnika koje će oni postavljati, te će savjesne vozače i odgovorne nagraditi, one malo manje odgovorne kazniti.
+* Prilikom ulaska u prevozno sredstvo dovoljno je da osoba potvrdi svoj ulazak RFID uređajem. Ukoliko putnik nije iskoristio svoju kartu, senzor potvrđuje mogućnost njegovog prolaska. Međutim ukoliko pri ulasku u vozilo senzor očita da stanje njegovog računa nije zadovoljavajuće(tj. osoba nema kartu, ili je ista istekla) putnik onda mora kupiti kartu kod vozača.
+
+* Uvid u položaj trenutni položaj vozila: soba nakon prijave na aplikaicju može odabrati željenu liniju vožnje. S obzirom da su sva vozila povezana sa sistemom, prate se informacije o položaju vozila u toku vožnje pomoću GPS-a. Na taj način osoba može isplanirati tačan dolazak na stanicu, jer ima uvid u lokaciju svih vozila koja voze na željenoj relaciji. (Drugi način je da pri svakom dolasku na stajalište vozač da signal da se nalazi na stajalištu. Npr ukoliko neka linija ima 10 stajališta u oba smijera, vozač može signalizirati na aplikaciji prvo u kojem se smijeru kreće, a zatim prilikom dolaska na svaku od stanica signalizirati svoj dolazak. Samim proračunom nije teško odrediti posljenju lokaciju vozila, međutim moramo se osloniti da vozač nikada neće pogriješiti tj. zaboraviti signalizirati svoj dolazak. Iako je ovaj način lakše implementirati od GPS-a, on sa sobom nosi vjerovatnoću greške. Ona se može otkoloniti ako proračunamo prosječno trajanje vožnje u jednom smijeru, te odredimo mogućnost da aplikacija signalizira vozaču svaki put kada bi trebao da se nalazi na krajnjoj stanici. Tada on treba restovati poziciju, te ponovo otpočeti čekiranje na svakoj od sljedećih stanica u narednom krugu vožnje.
+
+* Ocjenjivanje usluge: Svakako rješenje za nesavjesne vozače se ogleda u ocjenjivanju usluge. Nakon što osoba uđe u prevozno sredstvo, ona ima uvid u stanje vozila u kojem se nalazi, te vozaču koji upravlja vozilom. Ukoliko je vozač kasnio ili je vozio nesavjesno, putnici će moći ocijeniti samu uslugu. Pri ocjenjivanju bit će ponuđene opcije:
+  * Ocijena vozača (1-5)
+  * Ocijena vozila (1-5
+ Također će putnici moći ostaviti komentar vezano za vozilo/ vozača i uslugu.
+
+* Postavljanje obaviještenja od strane vozača: Ukoliko vozač ima potrebu da obavijesti sve putnike na svojoj liniji o situaciji u saobraćaju obaviještava kontrolera saobraćaja o situaciji. Kontrolor saobraćaja zatim unosi to obaviještenje na aplikaciju, te sve zainteresirani putnici mogu pročitati obavijest.
 
 ## Funkcionalnosti
 
-* Mogućnost online kupovine karata
+* Mogućnost kupovine karata
 * Mogućnost korištenja prevoza uz minimalnu interakciju sa vozačem
 * Mogućnost uvida u pozicije svih vozila 
 * Mogućnost uvida u stanje vozila koje koristimo
