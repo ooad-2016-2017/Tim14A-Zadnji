@@ -22,9 +22,8 @@ Također s obzirom da će sva vozila biti povezana GPS-om, korisnici će biti u 
   * Matični broj
   * Status osobe(učenik, student, zaposlen/nezaposlen, uposlenik firme)
   * Šifra(osoba prilikom registracije unosi svoju šifru i čeka potvrdu registracije)
-  * Ukoliko je uposlenik GRAS-a, osoba dobija dodatni sigurnosni kod
-  Nakon registracije osoba od administratora dobiva svoj RFID uređaj koji koristi pri ulasku u vozilo
-   
+  * Ukoliko je uposlenik GRAS-a, osoba dobija dodatni sigurnosni kod. 
+Unos podataka vrši administrator koji ujedno i izdaje RFID senzore svima koji se registruju. Registracija košta 10 KM.   
 
 * Kupovina karata: Osoba nakon registrovanja korisničkog računa za aplikacij može odabrati željeni tip vozne karte koju želi kupiti, kao i vremenski termin kupovine. U ponudi će imati više tipova karata (dnevna, sedmična, mjesečna, godišnja, proozvoljan broj vožnji). Osoba nakon odabira tipa karte koju želi kupiti, odlazi na prodajno mjesto JKP Gras-a u određenom željenom terminu, te izvrši plaćanje karte osobi koja radi na naplati karata.
 
@@ -55,7 +54,9 @@ Također s obzirom da će sva vozila biti povezana GPS-om, korisnici će biti u 
 
 **2. Vozač** - Osoba koja je uposlenik GRAS-a. Neophodno je da se registruje pri ulasku u vozilo, kao i da prijavi samo vozilo u aplikaciju. Osim što upravlja vozilom, on može postavljati obavijesti koje se tiču korisnika prevoza na aplikaciji.
 
-**3. Upravnik** - Osoba koja upravlja preduzećem. Posjeduje pristup informacijama svih uposlenika, te na osnovu njihovih rejtinga stimuliše ih za njihov kvalitetan rad ili kažnjava za nekvalitetan. Određuje red vožnji, postavlja obavijesti koje se tiču radnika i putnika, postavlja raspored vožnji na aplikaciji, modificaira ih.
+**3. Kontrolor saobraćaja** - Osoba koja upravlja preduzećem. Posjeduje pristup informacijama svih uposlenika, te na osnovu njihovih rejtinga stimuliše ih za njihov kvalitetan rad ili kažnjava za nekvalitetan. Određuje red vožnji, postavlja obavijesti koje se tiču radnika i putnika, postavlja raspored vožnji na aplikaciji, modificaira ih.
 
 **4. Administrator** - Osoba koja je zadužena za održavanje aplikacije. Unosi podatke svih uposlenika, omogućava registrovanje putnika, izdaje svim registriranim korisnicima njihove šifre koje koriste za identifikaciju i osiguravanje identiteta. Dodaje nove uposlenike i uklanja bivše. 
+
+**5. Prodavač/čica** - Osoba koja je zadužena za prodaju karata(potvrdu kupovine karata)
 
