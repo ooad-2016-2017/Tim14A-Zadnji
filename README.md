@@ -17,11 +17,11 @@ Također s obzirom da će sva vozila biti povezana GPS-om, korisnici će biti u 
 ## Procesi
 
 * Registracija i prijava korisnika: Osoba podnosi zahtjev za kreiranje korisničkog računa. Neophodni podaci za kreiranje korisničkog računa su:
-  *Ime
-  *Prezime
-  *Matični broj
-  *Status osobe(učenik, student, zaposlen/nezaposlen, uposlenik firme)
-  *Šifra(osoba prilikom registracije unosi svoju šifru i čeka potvrdu registracije)
+  * Ime
+  * Prezime
+  * Matični broj
+  * Status osobe(učenik, student, zaposlen/nezaposlen, uposlenik firme)
+  * Šifra(osoba prilikom registracije unosi svoju šifru i čeka potvrdu registracije)
  
 
 
