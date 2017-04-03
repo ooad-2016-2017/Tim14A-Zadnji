@@ -60,3 +60,4 @@ Unos podataka vrši administrator koji ujedno i izdaje RFID senzore svima koji s
 
 **5. Prodavač/čica** - Osoba koja je zadužena za prodaju karata(potvrdu kupovine karata)
 
+**6. Upravnik** - Osoba koja nadgleda rad uposlenika, te na osnovu ocjene korisnika nagrađuje ili kažnjava vozače
