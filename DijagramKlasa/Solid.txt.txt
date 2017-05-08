@@ -1,0 +1,16 @@
+SOLID PRINCIPI:
+
+1. Princip pojedinaène odgovornosti
+Princip pojedinaène je zadovoljen pošto nema klasa koje imaju više razloga za promjenu. Klase su kreirane sa ciljem da ne obavljaju puno aktivnosti i da imaju samo jednu odgovornost.
+
+2. Otvoreno zatvoreni princip
+Otvoreno zatvoreni princip je zadovoljen. 
+
+3. Liskov princip zamjene
+Liskov princip zamjene je zadovoljen, jer nema nasljeðivanja meðu klasama.
+
+4. Princip inverzije ovisnosti
+Princip inverzije ovisnosti je zadovoljen.
+
+5. Princip izoliranja interfejsa
+Na našem klasnom dijagramu nema tzv. "debelih klasa", tako da je i ovaj princip zadovoljen.
